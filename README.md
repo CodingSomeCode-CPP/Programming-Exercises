@@ -23,3 +23,18 @@ I just added `map_2d.cpp`. This one was a bit harder because it uses nested loop
 * 2D arrays are like grids with rows and columns.
 * To print a grid, you have to use two `for` loops.
 * `cout << endl;` is super important inside the first loop, otherwise the numbers just stay in one long line.
+
+
+
+## Level Up: Vectors inside Vectors (Dynamic Maps)
+
+I upgraded the map logic! Instead of a basic array, I'm now using a `vector<vector<int>>`. 
+
+### Why this is better:
+* **No Fixed Size:** With the old array, I could only have 2 rows. With vectors, I can use `.push_back()` to add new rows whenever I want.
+* **Flexibility:** Each row could technically have a different number of items (though that's a bit confusing for now).
+* **Safe Loops:** I used `.size()` in my loops so the program never crashes even if the map changes.
+
+### What I learned:
+* How to nest vectors: `vector<vector<type>>`.
+* How to add a whole new row by creating a temporary vector and pushing it into the main one.
